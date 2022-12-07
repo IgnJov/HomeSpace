@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:id="@+id/logo"
+    />
+
+  <EditText
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/isiEmail"
+      android:hint="Email"
+      android:layout_below="@id/logo"
+      android:drawableLeft="@drawable/image_email"
+      android:layout_centerHorizontal="true"
+      android:drawablePadding="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="40dp"
+      android:paddingTop="15dp"
+      android:paddingBottom="15dp"
+      android:paddingLeft="15dp"
+      android:background="@drawable/button_border"
+      />
+
+  <EditText
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/isiPassword"
+      android:hint="Password"
+      android:layout_below="@id/isiEmail"
+      android:drawableLeft="@drawable/image_password"
+      android:layout_centerHorizontal="true"
+      android:drawablePadding="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="40dp"
+      android:paddingTop="15dp"
+      android:paddingBottom="15dp"
+      android:paddingLeft="15dp"
+      android:background="@drawable/button_border"
+      />
+
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="20dp"
+      android:text="Forgot Password ?"
+      android:layout_below="@id/isiPassword"
+      android:textSize="10sp"
+      android:background="@android:color/transparent"
+      android:layout_marginLeft="35dp"
+      android:id="@+id/forgotPass"
+      />
+
+  <Button
+      android:id="@+id/btnSignIn"
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/isiPassword"
+      android:layout_marginTop="85dp"
+      android:layout_centerHorizontal="true"
+      android:text="SIGN IN"
+      android:background="@drawable/button_border"
+      android:textSize="25sp"
+      />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Don't have any account ?"
+    android:layout_below="@id/btnSignIn"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="50dp"
+    android:textColor="@color/black"
+      android:id="@+id/tes1"
+      android:paddingLeft="50dp"
+      />
+
+  <Button
+      android:layout_width="60dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/btnSignIn"
+      android:layout_toRightOf="@id/tes1"
+      android:text="Sign Up"
+      android:paddingLeft="0dp"
+      android:background="@drawable/button_no_border"
+      />
+
+
+
+
+
+  </RelativeLayout>
