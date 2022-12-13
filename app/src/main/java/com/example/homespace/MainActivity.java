@@ -13,7 +13,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     String name;
-
+// tes tes
     //    TextView username;
     TextView viewDate;
     Calendar calendar;
