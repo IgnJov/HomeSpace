@@ -13,7 +13,6 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
     String name;
-// tes tes
     //    TextView username;
     TextView viewDate;
     Calendar calendar;
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 //        username = findViewById(R.id.username);
 //        name = getIntent().getExtras().getString("username");
 //        username.setText(name);
-// tes ubah
         calendar = Calendar.getInstance();
         current = DateFormat.getDateInstance(DateFormat.FULL).format(calendar.getTime());
 
