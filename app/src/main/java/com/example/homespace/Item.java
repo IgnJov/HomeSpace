@@ -1,5 +1,7 @@
 package com.example.homespace;
 
+import android.database.sqlite.SQLiteDatabase;
+
 public class Item {
     private String name;
     private int quantity;

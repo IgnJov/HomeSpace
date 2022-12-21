@@ -3,9 +3,12 @@ package com.example.homespace;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -32,5 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
         viewDate = findViewById(R.id.date);
         viewDate.setText(current);
+
+        DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
+
+        //Toast.makeText(this, dbHelper.getCategory(), Toast.LENGTH_LONG).show();
     }
 }
