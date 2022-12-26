@@ -95,7 +95,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public String getCategory(){
         SQLiteDatabase db = this.getReadableDatabase();
         String[] columns = new String[] {ID, NAME};
-        Cursor cursor = db.rawQuery();
+        Cursor cursor = db.rawQuery(DatabaseHelper);
 
         String text = "Hello";
         if(cursor != null){
